@@ -1,0 +1,12 @@
+*~
+*#*
+*jfk*
+*will*
+*gary*
+**__pycache__/
+.mypy_cache/
+node_modules/
+redis*/
+*.gz
+*Zone.Identifier
+*lock.json
