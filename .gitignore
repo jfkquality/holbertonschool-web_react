@@ -10,3 +10,4 @@ redis*/
 *.gz
 *Zone.Identifier
 *lock.json
+*LICENSE*
