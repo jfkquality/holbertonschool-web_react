@@ -22,7 +22,7 @@ export function sumMajorCredits(
       _brand: null,
     }
   
-    return obj;
+    return obj as MajorCredits;
   }
   
 export function sumMinorCredits(
@@ -35,6 +35,6 @@ export function sumMinorCredits(
       _brand: null,
     };
   
-    return obj;
+    return obj as MinorCredits;
   }
   
