@@ -2,36 +2,36 @@
 
 // Task 11.
 
-interface MajorCredits {
-    credit: number;
+export interface MajorCredits {
+    credits: number;
     _brand: "Major";
   }
   
-  interface MinorCredits {
-    credit: number;
+export  interface MinorCredits {
+    credits: number;
     _brand: "Minor";
   }
   
-  function sumMajorCredits(
+export function sumMajorCredits(
     subject1: MajorCredits,
     subject2: MajorCredits
   ): MajorCredits {
-    const sum = subject1.credit + subject2.credit;
+    const sum = subject1.credits + subject2.credits;
     const obj: MajorCredits = {
-      credit: sum,
+      credits: sum,
       _brand: "Major",
     };
   
     return obj;
   }
   
-  function sumMinorCredits(
+export function sumMinorCredits(
     subject1: MinorCredits,
     subject2: MinorCredits
   ): MinorCredits {
-    const sum = subject1.credit + subject2.credit;
+    const sum = subject1.credits + subject2.credits;
     const obj: MinorCredits = {
-      credit: sum,
+      credits: sum,
       _brand: "Minor",
     };
   
