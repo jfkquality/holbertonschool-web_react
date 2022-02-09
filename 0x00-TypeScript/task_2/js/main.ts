@@ -73,7 +73,7 @@ interface DirectorInterface {
   
   // Task 6.
 
-  export function isDirector(employee: Director | Teacher): employee is Director {
+  export function isDirector(employee: DirectorInterface | TeacherInterface): employee is DirectorInterface {
     return employee.workFromHome() === 'Working from home';
   }
   export function executeWork(employee: DirectorInterface | TeacherInterface): string {
