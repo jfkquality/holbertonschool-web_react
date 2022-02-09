@@ -4,12 +4,12 @@
 
 export interface MajorCredits {
     credits: number;
-    _brand: "Major";
+    _brand: void;
   }
   
 export  interface MinorCredits {
     credits: number;
-    _brand: "Minor";
+    _brand: void;
   }
   
 export function sumMajorCredits(
