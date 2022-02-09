@@ -34,4 +34,18 @@ interface Directors extends Teacher {
   
   console.log(director1);
   
+  // Task 3.
+
+interface printTeacherFunction {
+    (name1: string, name2: string): string;
+  }
+  
+  export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+    return firstName.charAt(0) + '. ' + lastName;
+  }
+  
+  const teach: printTeacherFunction = printTeacher;
+  
+  console.log(teach('John', 'Knight'));
+  
   
