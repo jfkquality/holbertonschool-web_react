@@ -19,8 +19,8 @@ export function sumMajorCredits(
     const sum = subject1.credits + subject2.credits;
     const obj: MajorCredits = {
       credits: sum,
-      _brand: "Major",
-    };
+      _brand: null,
+    }
   
     return obj;
   }
@@ -32,7 +32,7 @@ export function sumMinorCredits(
     const sum = subject1.credits + subject2.credits;
     const obj: MinorCredits = {
       credits: sum,
-      _brand: "Minor",
+      _brand: null,
     };
   
     return obj;
