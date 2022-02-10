@@ -1,7 +1,7 @@
 :root {
   --holberton-red: #e0354b;
 }
-body, header, footer, .login {
+body, header, footer, .login, p {
   font-family: 'Times New Roman', Times, serif;
 }
 .App {
