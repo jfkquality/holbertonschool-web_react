@@ -63,7 +63,7 @@ body, header, footer, .login, p {
   display:flex;
   margin-right: 10px;
 } */
-.login input, label {
+.login input {
   margin-right: 10px;
 }
 .App-footer {
