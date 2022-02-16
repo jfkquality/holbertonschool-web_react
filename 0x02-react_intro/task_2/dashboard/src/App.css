@@ -66,6 +66,9 @@ body, header, footer, .login, p {
 .login input {
   margin-right: 10px;
 }
+.login label {
+  margin-right: 5px;
+}
 .App-footer {
   border-top: 3px solid var(--holberton-red);
   display: flex;

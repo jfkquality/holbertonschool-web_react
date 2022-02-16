@@ -1,7 +1,7 @@
 :root {
   --holberton-red: #e0354b;
 }
-body, header, footer, .login {
+body, header, footer, .login, p {
   font-family: 'Times New Roman', Times, serif;
 }
 .App {
@@ -63,8 +63,11 @@ body, header, footer, .login {
   display:flex;
   margin-right: 10px;
 } */
-.login input, label {
+.login input {
   margin-right: 10px;
+}
+.login label {
+  margin-right: 5px;
 }
 .App-footer {
   border-top: 3px solid var(--holberton-red);
