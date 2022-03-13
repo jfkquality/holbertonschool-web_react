@@ -12,3 +12,5 @@ export const map = Map({
 export const map2 = map.withMutations((obj) => obj.set(2, 'Benjamin').set(4, 'Oliver'));
 
 // console.log(map2.toJS());
+// console.log(map2.get(2));
+// console.log(map2.get(4));
