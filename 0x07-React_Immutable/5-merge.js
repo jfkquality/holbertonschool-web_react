@@ -1,11 +1,11 @@
 import { List, Map } from 'immutable';
 
 export function concatElements(page1, page2) {
-  return List(page1).concat(List(page2)).toJS();
+  return List(page1).concat(List(page2)); // .toJS();
 }
 
 export function mergeElements(page1, page2) {
-  return List(Map(page1).merge(Map(page2))).toJS();
+  return Map(page1).merge(Map(page2)); // .toJS();
 }
 
 // const obj1 =  {
@@ -26,4 +26,9 @@ export function mergeElements(page1, page2) {
 //     6: 'Lucas',
 // };
 
-// console.log(mergeElements(obj1, obj2));  //.toJS());
+// const arr1 = ['ham', 'salami', 'bologna', 'pastrami'];
+// const arr2 = ['american', 'swiss', 'gouda', 'muenster', 'mozzarella', 'cheddar', 'jack'];
+
+// console.log(arr2);
+// console.log(concatElements(arr1, arr2));   //.toJS());
+// console.log(mergeElements(obj1, obj2));   //.toJS());
