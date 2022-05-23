@@ -46,7 +46,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: "body",
-      favicon: './src/assets/favicon.ico'
+      favicon: './src/assets/favicon.ico',
+      hot: 'true'
     })
   ],
   devtool: 'inline-source-map',
