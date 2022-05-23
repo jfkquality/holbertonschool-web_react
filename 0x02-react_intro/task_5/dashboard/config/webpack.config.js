@@ -8,6 +8,7 @@ module.exports = {
     contentBase: path.join(__dirname, '../dist'),
     compress: true,
     port: 8564,
+    hot:true,
   },
   module: {
     rules: [
@@ -46,8 +47,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: "body",
-      favicon: './src/assets/favicon.ico',
-      hot: 'true'
+      favicon: './src/assets/favicon.ico'
     })
   ],
   devtool: 'inline-source-map',
