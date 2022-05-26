@@ -4,8 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
+  output: {
+    path: path.resolve(__dirname, "../dist"),
+    filename: "bundle.js",
+  },
   devServer: {
-    contentBase: path.join(__dirname, '../dist'),
+    static: path.resolve('./dist'),
     compress: true,
     port: 8564,
     hot: true,
@@ -28,26 +32,23 @@ module.exports = {
           },
         ],
       },
-    //   {
-    //     test: /\.(js|jsx)$/,
-    //     exclude: /node_modules/,
-    //     use: ['babel-loader']
-    //   },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
     ]
   },
-  output: {
-    path: path.resolve(__dirname, "../dist"),
-    filename: "bundle.js",
-  },
+
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './dist/index.html',
       inject: "body",
-      favicon: './src/assets/favicon.ico'
+      favicon: './dist/favicon.ico'
     })
   ],
   devtool: 'inline-source-map',
