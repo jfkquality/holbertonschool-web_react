@@ -9,7 +9,7 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    static: path.resolve('./dist'),
+    static: path.resolve(__dirname, '../dist'),
     compress: true,
     port: 8564,
     hot: true,
