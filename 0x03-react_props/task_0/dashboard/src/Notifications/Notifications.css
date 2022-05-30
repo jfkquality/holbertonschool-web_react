@@ -4,11 +4,11 @@
   
 .Notifications{
     padding: 5;
-    border: 1px solid var(--holberton-red);
+    border: 1px dashed var(--holberton-red);
 }
 [data-priority='default'] {
     color: blue;
-}    
+}
 [data-priority='urgent'] {
-    color: red;   
+    color: var(--holberton-red);
 }

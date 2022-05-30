@@ -8,7 +8,7 @@
 }
 [data-priority='default'] {
     color: blue;
-}    
+}
 [data-priority='urgent'] {
-    color: red;   
+    color: var(--holberton-red);
 }
