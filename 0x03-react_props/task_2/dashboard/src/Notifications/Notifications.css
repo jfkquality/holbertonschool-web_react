@@ -1,0 +1,14 @@
+:root {
+    --holberton-red: #e0354b;
+}
+  
+.Notifications{
+    padding: 5;
+    border: 1px solid var(--holberton-red);
+}
+[data-priority='default'] {
+    color: blue;
+}    
+[data-priority='urgent'] {
+    color: red;   
+}
