@@ -1,0 +1,28 @@
+:root {
+    --holberton-red: #e0354b;
+  }
+  header {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .App-header {
+    /* background-color: #282c34; */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(6px + 2vmin);
+    color: var(--holberton-red);
+    border-bottom: 3px solid var(--holberton-red);
+  }
+
+    /* @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  

@@ -1,0 +1,23 @@
+:root {
+    --holberton-red: #e0354b;
+}
+
+footer, p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.App-footer {
+    border-top: 3px solid var(--holberton-red);
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+/* @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */

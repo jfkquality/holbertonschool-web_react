@@ -15,9 +15,7 @@ function App() {
         <main className="App-body">
           <Login />
         </main>
-        <div className='App-footer'>
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </React.Fragment>
   );
