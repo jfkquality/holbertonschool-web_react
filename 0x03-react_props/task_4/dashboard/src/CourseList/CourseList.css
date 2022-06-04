@@ -1,0 +1,26 @@
+table {
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+table th {
+    width: 70%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 2px solid lightgray;
+}
+
+th:only-child {
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+}
+
+tbody {
+    border-top: 1px solid red;
+}
+
+tbody tr {
+    text-align: justify;
+}

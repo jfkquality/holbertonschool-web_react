@@ -1,0 +1,44 @@
+:root {
+  --holberton-red: #e0354b;
+}
+
+body, p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-body {
+  margin-left: 5%;
+  margin-top: 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* justify-content: left; */
+}
+
+.App-body p {
+  text-align: left;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
